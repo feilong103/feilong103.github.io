@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>搭配 Fluid 如何优雅的写一篇文章 | 小Q's Blog</title><meta name="author" content="小Q"><meta name="copyright" content="小Q"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言Fluid 是一款很十分优雅的主题，那么写一篇优雅的文章搭配它呢？以下会从几个方面来简述，主要还是做几个推荐。 文章内容熟悉 Markdown 语法对于使用 Hexo 的大多数人来说，相信对 Markdown 的语法不会陌生。熟练掌握 Markdown 语法对我们的写作拥有极大的帮助，这里用少用的表格和脚注来举个例子。至于为什么有些公式、流程图无法渲染，是因为 Markdown 追求简洁式写作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭配 Fluid 如何优雅的写一篇文章">
+<meta property="og:url" content="http://feilong103.vercel.app/2021/08/13/%E6%90%AD%E9%85%8D-Fluid-%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%99%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/index.html">
+<meta property="og:site_name" content="小Q&#39;s Blog">
+<meta property="og:description" content="前言Fluid 是一款很十分优雅的主题，那么写一篇优雅的文章搭配它呢？以下会从几个方面来简述，主要还是做几个推荐。 文章内容熟悉 Markdown 语法对于使用 Hexo 的大多数人来说，相信对 Markdown 的语法不会陌生。熟练掌握 Markdown 语法对我们的写作拥有极大的帮助，这里用少用的表格和脚注来举个例子。至于为什么有些公式、流程图无法渲染，是因为 Markdown 追求简洁式写作">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281601171.jpg">
+<meta property="article:published_time" content="2021-08-12T19:48:59.000Z">
+<meta property="article:modified_time" content="2023-04-23T23:40:39.406Z">
+<meta property="article:author" content="小Q">
+<meta property="article:tag" content="hexo美化">
+<meta property="article:tag" content="Fluid主题">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281601171.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108200338178.png"><link rel="canonical" href="http://feilong103.vercel.app/2021/08/13/%E6%90%AD%E9%85%8D-Fluid-%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%99%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '搭配 Fluid 如何优雅的写一篇文章',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-24 07:40:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281601171.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="小Q's Blog"><span class="site-name">小Q's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">搭配 Fluid 如何优雅的写一篇文章</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-12T19:48:59.000Z" title="发表于 2021-08-13 03:48:59">2021-08-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:40:39.406Z" title="更新于 2023-04-24 07:40:39">2023-04-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/hexo%E7%BE%8E%E5%8C%96/">hexo美化</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="搭配 Fluid 如何优雅的写一篇文章"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Fluid 是一款很十分优雅的主题，那么写一篇优雅的文章搭配它呢？以下会从几个方面来简述，主要还是做几个推荐。</p>
+<h2 id="文章内容"><a href="#文章内容" class="headerlink" title="文章内容"></a>文章内容</h2><h3 id="熟悉-Markdown-语法"><a href="#熟悉-Markdown-语法" class="headerlink" title="熟悉 Markdown 语法"></a>熟悉 Markdown 语法</h3><p>对于使用 Hexo 的大多数人来说，相信对 Markdown 的语法不会陌生。熟练掌握 Markdown 语法对我们的写作拥有极大的帮助，这里用少用的表格和脚注来举个例子。至于为什么有些公式、流程图无法渲染，是因为 <strong>Markdown 追求简洁式写作，默认渲染器不支持复杂渲染。</strong></p>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><table>
+<thead>
+<tr>
+<th>站点</th>
+<th align="center">地址</th>
+<th align="right">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fluid Docs</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">https://hexo.fluid-dev.com/docs/</a></td>
+<td align="right">Fluid 官方文档</td>
+</tr>
+<tr>
+<td>Hexo-theme-fluid</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">https://github.com/fluid-dev/hexo-theme-fluid</a></td>
+<td align="right">Fluid Github Repo</td>
+</tr>
+<tr>
+<td>Fluid Blog</td>
+<td align="center"><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">https://hexo.fluid-dev.com/</a></td>
+<td align="right">Fluid 官方博客</td>
+</tr>
+</tbody></table>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">站点|地址|介绍</span><br><span class="line">--|:--:|--:</span><br><span class="line">Fluid Docs|https://hexo.fluid-dev.com/docs/|Fluid 官方文档</span><br><span class="line">Hexo-theme-fluid|https://github.com/fluid-dev/hexo-theme-fluid|Fluid Github Repo</span><br><span class="line">Fluid Blog|https://hexo.fluid-dev.com/|Fluid 官方博客</span><br></pre></td></tr></table></figure>
+
+<h4 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h4><p>默认渲染器下正常显示，不同渲染器显示效果不同，写法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">脚注演示[^1]</span><br><span class="line">[^1]: 脚注内容演示</span><br></pre></td></tr></table></figure>
+
+<h3 id="善用-HTML"><a href="#善用-HTML" class="headerlink" title="善用 HTML"></a>善用 HTML</h3><p>我们可以在 Markdown 中插入一些简单的 HTML 代码或 CSS 片段来获得更多扩展，使得文章内容更具有多样性。以下演示几个简单功能。</p>
+<p>跳转位置演示（跳转位置设置点）</p>
+<h4 id="文字颜色"><a href="#文字颜色" class="headerlink" title="文字颜色"></a>文字颜色</h4><p>#519D9E颜色演示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span  style=&quot;color: #519D9E; &quot;&gt;#519D9E颜色演示&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="文字大小"><a href="#文字大小" class="headerlink" title="文字大小"></a>文字大小</h4><p>0.7em 文字大小演示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span  style=&quot;font-size:0.7em;&quot;&gt;0.7em 文字大小演示&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="文字位置"><a href="#文字位置" class="headerlink" title="文字位置"></a>文字位置</h4><p>内容居中演示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=&quot;text-align:center&quot;&gt;内容居中演示&lt;/p&gt; # 可以修改 text-align 参数来设置文字位置。</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="页内跳转"><a href="#页内跳转" class="headerlink" title="页内跳转"></a>页内跳转</h4><p><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/posts/fluid-write/#demo">点击到达跳转位置演示</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;#demo&quot;&gt;点击到达跳转位置演示&lt;/a&gt; # 在需要跳转的地方添加此代码。</span><br><span class="line">&lt;a id=&quot;demo&quot;&gt;跳转位置演示（跳转位置设置点）&lt;/a&gt; # 在跳转位置添加次代码。</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="综合演示"><a href="#综合演示" class="headerlink" title="综合演示"></a>综合演示</h4><p>综合演示<br>优雅使用 Fluid 写文章</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=&quot;text-align:center;color:#8EC0E4;font-size:1.5em;font-weight: bold;&quot;&gt;</span><br><span class="line">综合演示</span><br><span class="line">&lt;br&gt;</span><br><span class="line">优雅使用 Fluid 写文章</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="iframe-页面镶套"><a href="#iframe-页面镶套" class="headerlink" title="iframe 页面镶套"></a>iframe 页面镶套</h4><p>iframe 页面镶套可以帮助我们更好的展示一个页面。比如以下演示页面。</p>
+<iframe src="https://blog.fatsheep.cn/" width="100%" height="650" name="topFrame" scrolling="yes" noresize="noresize" frameborder="0" id="topFrame" style="box-sizing: border-box; color: rgb(196, 198, 201); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, &quot;Liberation Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(37, 45, 56); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"></iframe>
+
+
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;https://hexo.fluid-dev.com/&quot;</span> <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;500&quot;</span> <span class="attr">name</span>=<span class="string">&quot;topFrame&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;yes&quot;</span>  <span class="attr">noresize</span>=<span class="string">&quot;noresize&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span> <span class="attr">id</span>=<span class="string">&quot;topFrame&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>一些参数说明，<code>width=&quot;100%&quot;</code> 为宽度自适应，高度请根据实际需求跳转，<strong>注意移动端页面是否匹配。</strong> <code>scrolling</code> 为滚动条参数。<code>frameborder</code> 为边框参数。<code>noresize</code> 属性规定用户无法调整框架的大小。</p>
+<h4 id="details-标签"><a href="#details-标签" class="headerlink" title="details 标签"></a>details 标签</h4><p>用于展示代码较多需要折叠或折叠相关内容，以下为演示。<code>summary</code> 填写显示名称。</p>
+<details style="box-sizing: border-box; display: block; margin-top: 0px; margin-bottom: 16px; cursor: pointer; color: rgb(196, 198, 201); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, &quot;Liberation Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(37, 45, 56); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><summary style="box-sizing: border-box; display: list-item; cursor: pointer; outline: none;">Demo</summary></details>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;details&gt;</span><br><span class="line">&lt;summary&gt;Demo&lt;/summary&gt;</span><br><span class="line">&lt;p&gt;&lt;b&gt;好友申请备注：fluid&lt;/b&gt;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;&lt;b&gt;提问之前请先仔细查阅用户文档&lt;/b&gt;&lt;/p&gt;</span><br><span class="line">&lt;img width=&quot;200&quot; src=&quot;https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png&quot; alt=&quot;wechat&quot;&gt;</span><br><span class="line">&lt;/details&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="善用-Tag-组件"><a href="#善用-Tag-组件" class="headerlink" title="善用 Tag 组件"></a>善用 Tag 组件</h3><p>Fluid 内置了许多 Tag 组件，包含便签、行内标签（已知不会出现间隔，谨慎使用）、勾选框、按钮和组图，可以使用这些组件来丰富文章内容，具体点击查看官方文档查看，**<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6">点击跳转到 Fluid Doc</a>**。</p>
+<h2 id="配图"><a href="#配图" class="headerlink" title="配图"></a>配图</h2><p>众所周知，<strong>博客好不好看，配图占一半</strong>。这里给大家推荐几个我常用找配图的地方。<strong>另外，请遵循相关网站的版权协议。</strong></p>
+<h3 id="Wallpaper-Hub"><a href="#Wallpaper-Hub" class="headerlink" title="Wallpaper Hub"></a>Wallpaper Hub</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281558719.jpg" alt="Wallpaper Hub"></p>
+<p><strong><a target="_blank" rel="noopener" href="https://wallpaperhub.app/">点击跳转到 Wallpaper Hub</a></strong></p>
+<h3 id="Wallhaven"><a href="#Wallhaven" class="headerlink" title="Wallhaven"></a>Wallhaven</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281558718.jpg" alt="Wallhaven"></p>
+<p><strong><a target="_blank" rel="noopener" href="https://wallhaven.cc/">点击跳转到 Wallhaven</a></strong></p>
+<h3 id="Unsplash"><a href="#Unsplash" class="headerlink" title="Unsplash"></a>Unsplash</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281558717.jpg" alt="Unsplash"></p>
+<p><strong><a target="_blank" rel="noopener" href="https://unsplash.com/">点击跳转到 Unsplash</a></strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://feilong103.vercel.app">小Q</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://feilong103.vercel.app/2021/08/13/%E6%90%AD%E9%85%8D-Fluid-%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%99%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">http://feilong103.vercel.app/2021/08/13/%E6%90%AD%E9%85%8D-Fluid-%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%99%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://feilong103.vercel.app" target="_blank">小Q's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo%E7%BE%8E%E5%8C%96/">hexo美化</a><a class="post-meta__tags" href="/tags/Fluid%E4%B8%BB%E9%A2%98/">Fluid主题</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281601171.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/08/13/Win10%E7%AC%94%E8%AE%B0%E6%9C%AC%E8%A7%A6%E6%91%B8%E6%9D%BF%E6%95%99%E5%AD%A6/" title="Win10笔记本触摸板教学附新增桌面来摸鱼"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161805589.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Win10笔记本触摸板教学附新增桌面来摸鱼</div></div></a></div><div class="next-post pull-right"><a href="/2021/08/12/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" title="Markdown入门教程"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161705942.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Markdown入门教程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/08/27/Fluid-%E9%A1%B5%E8%84%9A%E5%A2%9E%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/" title="Fluid 页脚增加网站运行时长"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108272022889.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-27</div><div class="title">Fluid 页脚增加网站运行时长</div></div></a></div><div><a href="/2021/08/27/%E5%9C%A8-Fluid-%E4%B8%BB%E9%A2%98%E9%A6%96%E9%A1%B5%E4%B8%8A%E5%8A%A0%E5%85%A5%E4%B8%80%E8%A8%80/" title="在 Fluid 主题首页上加入一言"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108272056351.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-27</div><div class="title">在 Fluid 主题首页上加入一言</div></div></a></div><div><a href="/2021/08/28/%E4%BD%BF%E7%94%A8-Rainbow-%E5%B1%95%E7%A4%BA%E9%9A%8F%E6%9C%BA%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8F%A5%E5%AD%90/" title="使用 Rainbow 展示随机的英语句子"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281548575.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-28</div><div class="title">使用 Rainbow 展示随机的英语句子</div></div></a></div><div><a href="/2021/08/27/%E9%80%9A%E8%BF%87-Hexo-5-%E6%B3%A8%E5%85%A5%E5%99%A8%E4%B8%BA%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%B0%E5%8A%9F%E8%83%BD/" title="通过 Hexo 5 注入器为主题添加新功能"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108271955304.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-27</div><div class="title">通过 Hexo 5 注入器为主题添加新功能</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小Q</div><div class="author-info__description">我的个人博客，记录学习笔记和我的成长过程。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/feilong103"><i></i><span>🛴前往小家...</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/feilong103" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:834235688@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9"><span class="toc-text">文章内容</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%86%9F%E6%82%89-Markdown-%E8%AF%AD%E6%B3%95"><span class="toc-text">熟悉 Markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-text">表格</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%84%9A%E6%B3%A8"><span class="toc-text">脚注</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%96%84%E7%94%A8-HTML"><span class="toc-text">善用 HTML</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E9%A2%9C%E8%89%B2"><span class="toc-text">文字颜色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E5%A4%A7%E5%B0%8F"><span class="toc-text">文字大小</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E4%BD%8D%E7%BD%AE"><span class="toc-text">文字位置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%B5%E5%86%85%E8%B7%B3%E8%BD%AC"><span class="toc-text">页内跳转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%E6%BC%94%E7%A4%BA"><span class="toc-text">综合演示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#iframe-%E9%A1%B5%E9%9D%A2%E9%95%B6%E5%A5%97"><span class="toc-text">iframe 页面镶套</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#details-%E6%A0%87%E7%AD%BE"><span class="toc-text">details 标签</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%96%84%E7%94%A8-Tag-%E7%BB%84%E4%BB%B6"><span class="toc-text">善用 Tag 组件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E5%9B%BE"><span class="toc-text">配图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Wallpaper-Hub"><span class="toc-text">Wallpaper Hub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Wallhaven"><span class="toc-text">Wallhaven</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unsplash"><span class="toc-text">Unsplash</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202205252206339.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows下双系统卸载Linux"/></a><div class="content"><a class="title" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux">Windows下双系统卸载Linux</a><time datetime="2022-05-25T14:04:32.000Z" title="发表于 2022-05-25 22:04:32">2022-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110291837282.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PS教学教程推荐"/></a><div class="content"><a class="title" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐">PS教学教程推荐</a><time datetime="2021-10-29T10:58:59.000Z" title="发表于 2021-10-29 18:58:59">2021-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110212124371.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win11提前上车微软WSA(Windows Subsystem for Android)教程"/></a><div class="content"><a class="title" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程">Win11提前上车微软WSA(Windows Subsystem for Android)教程</a><time datetime="2021-10-21T15:09:14.000Z" title="发表于 2021-10-21 23:09:14">2021-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110131605466.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++第一天学习笔记【持续更新】"/></a><div class="content"><a class="title" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】">C++第一天学习笔记【持续更新】</a><time datetime="2021-10-13T08:04:00.000Z" title="发表于 2021-10-13 16:04:00">2021-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110081812085.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言算法流程图、NS图【张亚男老师】"/></a><div class="content"><a class="title" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】">c语言算法流程图、NS图【张亚男老师】</a><time datetime="2021-10-08T17:34:58.000Z" title="发表于 2021-10-09 01:34:58">2021-10-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 小Q</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>

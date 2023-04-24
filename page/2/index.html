@@ -1,0 +1,518 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>小Q's Blog - 小Q</title><meta name="author" content="小Q"><meta name="copyright" content="小Q"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我的个人博客，记录学习笔记和我的成长过程。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小Q&#39;s Blog">
+<meta property="og:url" content="http://feilong103.vercel.app/page/2/index.html">
+<meta property="og:site_name" content="小Q&#39;s Blog">
+<meta property="og:description" content="我的个人博客，记录学习笔记和我的成长过程。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png">
+<meta property="article:author" content="小Q">
+<meta property="article:tag" content="小Q,hexo博客,学习笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108200338178.png"><link rel="canonical" href="http://feilong103.vercel.app/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '小Q\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-04-24 08:13:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161606259.jfif')"><nav id="nav"><span id="blog-info"><a href="/" title="小Q's Blog"><span class="site-name">小Q's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">小Q's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/feilong103" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:834235688@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/12/HTML5-%E5%92%8C-CSS3-%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/" title="HTML5 和 CSS3 的新特性"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109121641432.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML5 和 CSS3 的新特性"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/12/HTML5-%E5%92%8C-CSS3-%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7/" title="HTML5 和 CSS3 的新特性">HTML5 和 CSS3 的新特性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-12T05:43:03.000Z" title="发表于 2021-09-12 13:43:03">2021-09-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:37:24.290Z" title="更新于 2023-04-24 07:37:24">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/HTML5/">HTML5</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/CSS3/">CSS3</a></span></div><div class="content">大纲：
+
+HTML5的新特性
+CSS3的新特性
+
+1.HTML5 的新特性
+HTML5 的新增特性主要是针对于以前的不足，增加了一些新的标签、新的表单和新的表单属性等。这些新特性都有兼容性问题，基本是 IE9+ 以上版本的浏览器才支持，如果不考虑兼容性问题，可以大量使用这些新特性。
+
+声明：新特性增加了很多，但是我们专注于开发常用的新特性。
+1.1HTML5 新增的语义化标签以前布局，我们基本用 div 来做。div 对于搜索引擎来说，是没有语义的。
+1234&lt;div class=“header”&gt; &lt;/div&gt;&lt;div class=“nav”&gt; &lt;/div&gt;&lt;div class=“content”&gt; &lt;/div&gt;&lt;div class=“footer”&gt; &lt;/div&gt;
+
+HTML5 新增的语义化标签：
+
+&lt;header&gt;：头部标签
+&lt;nav&gt;：导航标签
+&lt;article&gt;：内容标签
+&lt;section&gt;：定义文档某个区域
+&lt;aside&gt ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/09/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%E6%89%8B%E5%86%8C/" title="Web前端开发规范手册"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/fatsheeps/mypicgo@master/202108161606482.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Web前端开发规范手册"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/09/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%E6%89%8B%E5%86%8C/" title="Web前端开发规范手册">Web前端开发规范手册</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-09T13:26:32.000Z" title="发表于 2021-09-09 21:26:32">2021-09-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T01:01:41.836Z" title="更新于 2023-04-23 09:01:41">2023-04-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E8%A7%84%E8%8C%83%E6%89%8B%E5%86%8C/">规范手册</a></span></div><div class="content">一、规范目的1.1概述
+为提高团队协作效率, 便于后台人员添加功能及前端后期优化维护, 输出高质量的文档, 特制订此文档。
+本规范文档一经确认, 前端开发人员必须按本文档规范进行前台页面开发。
+本文档如有不对或者不合适的地方请及时提出, 经讨论决定后可以更改此文档。
+
+二、文件规范2.1文件命名规则
+文件名称统一用小写的英文字母、数字和下划线的组合，其中不得包含汉字、空格和特殊字符。
+命名原则的指导思想一是使得你自己和工作组的每一个成员能够方便的理解每一个文件的意义，二是当我们在文件夹中使用“按名称排例”的命令时，同一种大类的文件能够排列在一起，以便我们查找、修改、替换、计算负载量等等操作。
+
+HTML的命名原则
+引文件统一使用index.htm index.html index.asp文件名（小写）
+各子页命名的原则首先应该以栏目名的英语翻译取单一单词为名称。
+
+例如： 
+
+关于我们 \ aboutus 
+
+信息反馈 \ feedback 
+
+产 品 \ product
+
+
+ 如果栏目名称多而复杂并不好以英文单词命名，则统一使用该栏目名称拼音或拼音的首字母表示；
+ 每一个目录中应该包 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/06/css%E7%AC%AC%E5%85%AD%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E5%B7%B2%E5%AE%8C%E7%BB%93%E3%80%91/" title="css第六天学习笔记【已完结】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109021649897.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css第六天学习笔记【已完结】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/06/css%E7%AC%AC%E5%85%AD%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E5%B7%B2%E5%AE%8C%E7%BB%93%E3%80%91/" title="css第六天学习笔记【已完结】">css第六天学习笔记【已完结】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-06T12:05:38.000Z" title="发表于 2021-09-06 20:05:38">2021-09-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:35:33.581Z" title="更新于 2023-04-24 07:35:33">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/css/">css</a></span></div><div class="content">CSS第六天大纲：
+
+精灵图
+字体图标
+CSS三角
+CSS用户界面样式
+vertical-align属性应用
+溢出文字省略号显示
+常见布局技巧
+
+
+
+1.精灵图
+为什么需要精灵图？
+精灵图的使用
+精灵图课堂案例
+
+1.1为什么需要精灵图
+一个网页中往往会应用很多小的背景图像作为修饰，当网页中的图像过多时，服务器就会频繁地接收和发送请求图片，造成服务器请求压力过大，这将大大降低页面的加载速度。
+因此，为了有效地减少服务器接收和发送请求的次数，提高页面的加载速度，出现了 CSS 精灵技术（也称 CSS Sprites、CSS 雪碧）。
+
+核心原理：将网页中的一些小背景图像整合到一张大图中 ，这样服务器只需要一次请求就可以了。
+
+精灵技术目的：为了有效地减少服务器接收和发送请求的次数，提高页面的加载速度。
+1.2精灵图（sprites）的使用使用精灵图核心：
+
+精灵技术主要针对于背景图片使用。就是把多个小背景图片整合到一张大图片中。
+这个大图片也称为 sprites 精灵图 或者 雪碧图
+移动背景图片位置， 此时可以使用 background-position 。
+移动的距离就是这个目标图片 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/06/css%E7%AC%AC%E4%BA%94%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第五天学习笔记【持续更新】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109021649897.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css第五天学习笔记【持续更新】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/06/css%E7%AC%AC%E4%BA%94%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第五天学习笔记【持续更新】">css第五天学习笔记【持续更新】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-06T10:57:06.000Z" title="发表于 2021-09-06 18:57:06">2021-09-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:36:13.608Z" title="更新于 2023-04-24 07:36:13">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/css/">css</a></span></div><div class="content">CSS第五天大纲：
+
+定位
+综合案例
+网页布局总结
+元素的显示与隐藏
+
+
+
+1.定位1.1为什么需要定位提问： 以下情况使用标准流或者浮动能实现吗？
+1.某个元素可以自由的在一个盒子内移动位置，并且压住其他盒子。
+
+2.当我们滚动窗口的时候，盒子是固定屏幕某个位置的。
+
+以上效果，标准流或浮动都无法快速实现，此时需要定位来实现。
+所以：
+
+浮动可以让多个块级盒子一行没有缝隙排列显示， 经常用于横向排列盒子。
+定位则是可以让盒子自由的在某个盒子内移动位置或者固定屏幕中某个位置，并且可以压住其他盒子。
+
+1.2定位组成定位：将盒子定在某一个位置，所以定位也是在摆放盒子， 按照定位的方式移动盒子。
+定位 = 定位模式 + 边偏移 。
+定位模式用于指定一个元素在文档中的定位方式。边偏移则决定了该元素的最终位置。
+1.定位模式定位模式决定元素的定位方式 ，它通过 CSS 的 position 属性来设置，其值可以分为四个：
+
+
+
+值
+语义
+
+
+
+static
+静态定位
+
+
+relative
+相对定位
+
+
+absolute
+绝对定位
+
+
+fixed
+固定定位
+
+
+2.边偏移边偏移就是定位的盒子移动 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/05/%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E5%88%B7%E7%BD%91%E8%AF%BE%E3%80%81%E8%BF%BD%E5%89%A7%E3%80%81%E4%B8%8B%E8%B5%84%E6%96%99/" title="使用油猴脚本刷网课、追剧、下资料"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109051736910.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用油猴脚本刷网课、追剧、下资料"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/05/%E4%BD%BF%E7%94%A8%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC%E5%88%B7%E7%BD%91%E8%AF%BE%E3%80%81%E8%BF%BD%E5%89%A7%E3%80%81%E4%B8%8B%E8%B5%84%E6%96%99/" title="使用油猴脚本刷网课、追剧、下资料">使用油猴脚本刷网课、追剧、下资料</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-05T07:49:53.000Z" title="发表于 2021-09-05 15:49:53">2021-09-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:41:52.771Z" title="更新于 2023-04-24 07:41:52">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/">油猴脚本</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/">油猴脚本</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/tampermonkey/">tampermonkey</a></span></div><div class="content">使用油猴脚本刷网课、追剧、下资料，支持超星（学习通）、智慧树、云课堂智慧职教、慕课MOOC等平台
+
+
+什么是油猴脚本
+油猴脚本是一款免费的浏览器扩展和最为流行的用户脚本管理器，它适用于 Chrome, Microsoft Edge, Safari, Opera Next, 和 Firefox。
+tampermonkey俗称油猴，油猴是一款免费实用且强悍的浏览器插件，它可以实现各种意想不到的功能。如观看VIP电影、解除网页防止复制粘贴功能、直接下载云盘大文件、自定义网盘分享密码、下载微软官网隐藏的ISO系统镜像等等。
+
+安装油猴脚本打开网站：Tampermonkey • 首页
+然后选择自己浏览器的版本安装，我这里以Win10自带的浏览器Edge为例
+
+
+
+恭喜，到此你就已经成功为你的浏览器安装上了油猴脚本哦！
+安装脚本脚本很多，不只是刷网课，还可以下载文档，下载视频，甚至解锁b站大会员… 下面以刷网课为例演示，其他脚本同理。
+脚本下载平台：
+
+Userscript.Zone Search
+ Github 和 Gist 中 
+OpenUserJS 
+GreasyFork
+
+下面以比较常用的 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/05/css%E7%AC%AC%E5%9B%9B%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第四天学习笔记【持续更新】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109021649897.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css第四天学习笔记【持续更新】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/05/css%E7%AC%AC%E5%9B%9B%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第四天学习笔记【持续更新】">css第四天学习笔记【持续更新】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-05T07:23:54.000Z" title="发表于 2021-09-05 15:23:54">2021-09-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:36:02.696Z" title="更新于 2023-04-24 07:36:02">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/css/">css</a></span></div><div class="content">CSS第四天大纲：
+
+浮动
+常见页面布局
+清除浮动
+PS 切图
+学成在线案例
+
+
+
+1.浮动（float)1.1传统网页布局的三种方式网页布局的本质——用 CSS 来摆放盒子。 把盒子摆放到相应位置。
+CSS 提供了三种传统布局方式(简单说,就是盒子如何进行排列顺序)：
+
+普通流（标准流）
+浮动
+定位
+
+1.2标准流（普通流/文档流）所谓的标准流: 就是标签按照规定好默认方式排列。
+1.块级元素会独占一行，从上向下顺序排列。
+
+常用元素：div、hr、p、h1~h6、ul、ol、dl、form、table
+
+2.行内元素会按照顺序，从左到右顺序排列，碰到父元素边缘则自动换行。
+
+常用元素：span、a、i、em 等
+
+以上都是标准流布局，我们前面学习的就是标准流，标准流是最基本的布局方式。
+这三种布局方式都是用来摆放盒子的，盒子摆放到合适位置，布局自然就完成了。
+注意：实际开发中，一个页面基本都包含了这三种布局方式（后面移动端学习新的布局方式） 。
+1.3为什么需要浮动？提问：我们用标准流能很方便的实现如下效果吗？
+1.如何让多个块级盒子(div)水平排列成一行？
+
+比较难，虽然转换为 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/04/css%E7%AC%AC%E4%B8%89%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第三天学习笔记【持续更新】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109021649897.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css第三天学习笔记【持续更新】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/04/css%E7%AC%AC%E4%B8%89%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第三天学习笔记【持续更新】">css第三天学习笔记【持续更新】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-04T03:09:15.000Z" title="发表于 2021-09-04 11:09:15">2021-09-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:35:49.609Z" title="更新于 2023-04-24 07:35:49">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/css/">css</a></span></div><div class="content">CSS第三天大纲：
+
+盒子模型
+PS基本操作
+综合案例
+圆角边框
+盒子阴影
+文字阴影
+
+
+
+1.盒子模型页面布局要学习三大核心, 盒子模型, 浮动 和 定位. 学习好盒子模型能非常好的帮助我们布局页面。
+1.1看透网页布局的本质
+网页布局过程：
+
+先准备好相关的网页元素，网页元素基本都是盒子 Box 。
+利用 CSS 设置好盒子样式，然后摆放到相应位置。
+往盒子里面装内容。
+
+网页布局的核心本质： 就是利用 CSS 摆盒子。
+1.2盒子模型（Box Model）组成
+所谓 盒子模型：就是把 HTML 页面中的布局元素看作是一个矩形的盒子，也就是一个盛装内容的容器。
+CSS 盒子模型本质上是一个盒子，封装周围的 HTML 元素，它包括：边框、外边距、内边距、和 实际内容
+
+
+1.3边框（border）
+border可以设置元素的边框。边框有三部分组成:边框宽度(粗细) 边框样式 边框颜色
+语法：
+1border : border-width || border-style || border-color
+
+
+
+
+属性
+作用
+
+
+
+border-width
+定义边框粗细，单位是px
+
+
+b ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/02/css%E7%AC%AC%E4%BA%8C%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第二天学习笔记【持续更新】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109021649897.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css第二天学习笔记【持续更新】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/02/css%E7%AC%AC%E4%BA%8C%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第二天学习笔记【持续更新】">css第二天学习笔记【持续更新】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-02T13:43:50.000Z" title="发表于 2021-09-02 21:43:50">2021-09-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:35:20.658Z" title="更新于 2023-04-24 07:35:20">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/css/">css</a></span></div><div class="content">CSS第二天大纲：
+
+CSS的复合选择器
+CSS的元素显示模式
+CSS的背景
+CSS的三大特性
+CSS的注释
+
+
+
+1.CSS 的复合选择器1.1什么是复合选择器在 CSS 中，可以根据选择器的类型把选择器分为基础选择器和复合选择器，复合选择器是建立在基础选择器之上，对基本选择器进行组合形成的。
+
+复合选择器可以更准确、更高效的选择目标元素（标签）
+复合选择器是由两个或多个基础选择器，通过不同的方式组合而成的
+常用的复合选择器包括：后代选择器、子选择器、并集选择器、伪类选择器等等
+
+1.2后代选择器 (重要）后代选择器又称为包含选择器，可以选择父元素里面子元素。其写法就是把外层标签写在前面，内层标签写在后面，中间用空格分隔。当标签发生嵌套时，内层标签就成为外层标签的后代。
+语法：
+1元素1 元素2 &#123; 样式声明 &#125;
+
+上述语法表示选择元素 1 里面的所有元素 2 (后代元素)。
+例如：
+1ul li &#123; 样式声明 &#125; /* 选择 ul 里面所有的 li标签元素 */
+
+
+元素1 和 元素2 中间用空格隔开
+元素1 是父级，元素2 是子级，最终选择 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/02/css%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第一天学习笔记【持续更新】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109021649897.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css第一天学习笔记【持续更新】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/02/css%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="css第一天学习笔记【持续更新】">css第一天学习笔记【持续更新】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-02T07:57:50.000Z" title="发表于 2021-09-02 15:57:50">2021-09-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:36:19.326Z" title="更新于 2023-04-24 07:36:19">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/css/">css</a></span></div><div class="content">CSS第一天大纲：
+
+CSS简介
+CSS基础选择器
+CSS字体属性
+CSS文本属性
+CSS的引入方式
+综合案例
+Chrome调试工具
+
+
+
+1.CSS 简介CSS 的主要使用场景就是美化网页,布局页面的。
+
+HTML 的局限性
+CSS-网页的美容师
+
+1.1 HTML 的局限性
+说起 HTML，这其实是个非常单纯的家伙，他只关注内容的语义。比如 &lt;h1&gt; 表明这是一个大标题，&lt;p&gt; 表明这是一个段落，&lt;img&gt; 表明这儿有一个图片，&lt;a&gt; 表示此处有链接。很早的时候，世界上的网站虽然很多，但是他们都有一个共同的特点：丑。虽然 HTML 可以做简单的样式，但是带来的是无尽的臃肿和繁琐……
+
+下面是用来形容没有加css修饰的html页面，就好比一只没有羽毛的鸟儿~
+
+1.2CSS-网页的美容师
+CSS 是层叠样式表 ( Cascading Style Sheets ) 的简称。
+有时我们也会称之为 CSS 样式表或级联样式表。
+CSS 是也是一种标记语言。
+CSS 主要用于设置 HTML 页面中的文本内容（字体、大小、对齐方式等）、图片的外形 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/01/HTML%E7%AC%AC%E4%BA%8C%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E5%B7%B2%E5%AE%8C%E7%BB%93%E3%80%91/" title="HTML第二天学习笔记【已完结】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161850923.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML第二天学习笔记【已完结】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/01/HTML%E7%AC%AC%E4%BA%8C%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E5%B7%B2%E5%AE%8C%E7%BB%93%E3%80%91/" title="HTML第二天学习笔记【已完结】">HTML第二天学习笔记【已完结】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-31T16:07:30.000Z" title="发表于 2021-09-01 00:07:30">2021-09-01</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:37:30.201Z" title="更新于 2023-04-24 07:37:30">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/html/">html</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a></span></div><div class="content">HTML第二天大纲：
+
+HTML语法规范
+HTML基本结构标签
+开发工具
+HTML常用标签
+HTML中的注释和特殊字符
+查阅文档
+
+
+
+1.HTML语法规则：1.1基本语法概述
+HTML 标签是由尖括号包围的关键词，例如 。
+HTML 标签通常是成对出现的，例如  和  ，我们称为双标签。标签对中的第一个标签是开始标签，第二个标签是结束标签。 
+有些特殊的标签必须是单个标签（极少情况），例如 &lt;br /&gt;，我们称为单标签。 
+
+1.2标签的关系：​    双标签关系可以分为两类：包含关系和并列关系​    包含标签：
+123&lt;head&gt;      &lt;title&gt; &lt;/title&gt; &lt;/head&gt;
+
+    并列关系：
+12&lt;head&gt; &lt;/head&gt;&lt;body&gt; &lt;/body&gt;
+
+ 
+2.基本结构标签：2.1 第一个 HTML 网页每个网页都会有一个基本的结构标签（也称为骨架标签），页面内容也是在这些基本标签上书写。HTML页面也称为 HTML 文档.
+123456789&lt; ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小Q</div><div class="author-info__description">我的个人博客，记录学习笔记和我的成长过程。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/feilong103"><i></i><span>🛴前往小家...</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/feilong103" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:834235688@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202205252206339.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows下双系统卸载Linux"/></a><div class="content"><a class="title" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux">Windows下双系统卸载Linux</a><time datetime="2022-05-25T14:04:32.000Z" title="发表于 2022-05-25 22:04:32">2022-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110291837282.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PS教学教程推荐"/></a><div class="content"><a class="title" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐">PS教学教程推荐</a><time datetime="2021-10-29T10:58:59.000Z" title="发表于 2021-10-29 18:58:59">2021-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110212124371.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win11提前上车微软WSA(Windows Subsystem for Android)教程"/></a><div class="content"><a class="title" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程">Win11提前上车微软WSA(Windows Subsystem for Android)教程</a><time datetime="2021-10-21T15:09:14.000Z" title="发表于 2021-10-21 23:09:14">2021-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110131605466.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++第一天学习笔记【持续更新】"/></a><div class="content"><a class="title" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】">C++第一天学习笔记【持续更新】</a><time datetime="2021-10-13T08:04:00.000Z" title="发表于 2021-10-13 16:04:00">2021-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110081812085.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言算法流程图、NS图【张亚男老师】"/></a><div class="content"><a class="title" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】">c语言算法流程图、NS图【张亚男老师】</a><time datetime="2021-10-08T17:34:58.000Z" title="发表于 2021-10-09 01:34:58">2021-10-09</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Adobe/"><span class="card-category-list-name">Adobe</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/"><span class="card-category-list-name">C++</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C%E8%AF%AD%E8%A8%80/"><span class="card-category-list-name">C语言</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/IIS/"><span class="card-category-list-name">IIS</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Markdown/"><span class="card-category-list-name">Markdown</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/PS/"><span class="card-category-list-name">PS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/WSA/"><span class="card-category-list-name">WSA</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/HTML5/" style="font-size: 1.1em; color: #999">HTML5</a> <a href="/tags/Emmet%E8%AF%AD%E6%B3%95/" style="font-size: 1.1em; color: #999">Emmet语法</a> <a href="/tags/AliDrive/" style="font-size: 1.17em; color: #999c9f">AliDrive</a> <a href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">双系统</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 1.1em; color: #999">内网穿透</a> <a href="/tags/%E5%BC%A0%E4%BA%9A%E7%94%B7/" style="font-size: 1.1em; color: #999">张亚男</a> <a href="/tags/%E8%BD%BB%E8%96%84%E6%9C%AC/" style="font-size: 1.1em; color: #999">轻薄本</a> <a href="/tags/hexo%E7%BE%8E%E5%8C%96/" style="font-size: 1.3em; color: #99a1ac">hexo美化</a> <a href="/tags/pink%E8%80%81%E5%B8%88/" style="font-size: 1.43em; color: #99a6b9">pink老师</a> <a href="/tags/%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/" style="font-size: 1.1em; color: #999">油猴脚本</a> <a href="/tags/Rainbow/" style="font-size: 1.1em; color: #999">Rainbow</a> <a href="/tags/Ubuntu/" style="font-size: 1.1em; color: #999">Ubuntu</a> <a href="/tags/%E7%BD%91%E7%9B%98/" style="font-size: 1.3em; color: #99a1ac">网盘</a> <a href="/tags/bios/" style="font-size: 1.1em; color: #999">bios</a> <a href="/tags/Adobe/" style="font-size: 1.1em; color: #999">Adobe</a> <a href="/tags/html/" style="font-size: 1.37em; color: #99a4b2">html</a> <a href="/tags/%E7%94%B5%E8%84%91%E6%8A%80%E5%B7%A7/" style="font-size: 1.17em; color: #999c9f">电脑技巧</a> <a href="/tags/win11/" style="font-size: 1.1em; color: #999">win11</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 1.1em; color: #999">联想</a> <a href="/tags/%E7%A7%BB%E5%8A%A8web/" style="font-size: 1.17em; color: #999c9f">移动web</a> <a href="/tags/%E5%AE%89%E5%8D%93%E5%8E%9F%E7%94%9F/" style="font-size: 1.1em; color: #999">安卓原生</a> <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 1.1em; color: #999">C语言</a> <a href="/tags/OneManager/" style="font-size: 1.23em; color: #999ea6">OneManager</a> <a href="/tags/%E6%95%AC%E4%BC%9F%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">敬伟老师</a> <a href="/tags/Vposy/" style="font-size: 1.1em; color: #999">Vposy</a> <a href="/tags/vercel/" style="font-size: 1.1em; color: #999">vercel</a> <a href="/tags/Markdown/" style="font-size: 1.1em; color: #999">Markdown</a> <a href="/tags/%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%AB%99/" style="font-size: 1.1em; color: #999">本地网站</a> <a href="/tags/c%E8%AF%AD%E8%A8%80/" style="font-size: 1.1em; color: #999">c语言</a> <a href="/tags/b%E7%AB%99pink%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">b站pink老师</a> <a href="/tags/office-E5/" style="font-size: 1.1em; color: #999">office E5</a> <a href="/tags/PS/" style="font-size: 1.1em; color: #999">PS</a> <a href="/tags/OneDrive/" style="font-size: 1.3em; color: #99a1ac">OneDrive</a> <a href="/tags/tampermonkey/" style="font-size: 1.1em; color: #999">tampermonkey</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.5em; color: #99a9bf">前端</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">算法</a> <a href="/tags/Fluid%E4%B8%BB%E9%A2%98/" style="font-size: 1.23em; color: #999ea6">Fluid主题</a> <a href="/tags/dev-c/" style="font-size: 1.1em; color: #999">dev-c++</a> <a href="/tags/FC%E9%98%BF%E9%87%8C%E4%BA%91%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/" style="font-size: 1.1em; color: #999">FC阿里云函数计算</a> <a href="/tags/WSL/" style="font-size: 1.1em; color: #999">WSL</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">15</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">23</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">43</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2021-08-10T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">99k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-24T00:13:13.680Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 小Q</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = []
+        sub.unshift(data.hitokoto, from)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').innerHTML = data.hitokoto
+      }
+    })
+}
+typedJSFn.run(subtitleType)
+</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>

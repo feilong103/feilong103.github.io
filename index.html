@@ -1,38 +1,41 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>小Q's Blog - 小Q</title><meta name="author" content="小Q"><meta name="copyright" content="小Q"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我的个人博客，记录学习笔记和我的成长过程。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小Q&#39;s Blog">
 <meta property="og:url" content="http://feilong103.vercel.app/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="小Q&#39;s Blog">
+<meta property="og:description" content="我的个人博客，记录学习笔记和我的成长过程。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png">
+<meta property="article:author" content="小Q">
+<meta property="article:tag" content="小Q,hexo博客,学习笔记">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://feilong103.vercel.app/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108200338178.png"><link rel="canonical" href="http://feilong103.vercel.app/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
   highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
-    success: 'Copy successfully',
-    error: 'Copy error',
-    noSupport: 'The browser does not support'
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
   },
   relativeDate: {
-    homepage: false,
-    post: false
+    homepage: true,
+    post: true
   },
-  runtime: '',
+  runtime: '天',
   date_suffix: {
-    just: 'Just',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
   },
   copyright: undefined,
   lightbox: 'fancybox',
-  Snackbar: undefined,
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
   source: {
     justifiedGallery: {
       js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
@@ -40,19 +43,19 @@
     }
   },
   isPhotoFigcaption: false,
-  islazyload: false,
+  islazyload: true,
   isAnchor: false,
   percent: {
     toc: true,
     rightside: false,
   }
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'Hexo',
+  title: '小Q\'s Blog',
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-04-23 09:28:15'
+  postUpdate: '2023-04-24 08:13:14'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -138,8 +141,12 @@
       }
       const t = saveToLocal.get('theme')
     
-          if (t === 'dark') activateDarkMode()
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
           else if (t === 'light') activateLightMode()
+          else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
@@ -156,4 +163,297 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/02/2023-04-02%20%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" title="第一篇文章">第一篇文章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-02T13:04:00.000Z" title="Created 2023-04-02 21:04:00">2023-04-02</time></span></div><div class="content">这是我的第一篇文章</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/02/2023-04-02%20%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" title="第一篇文章">第一篇文章</a><time datetime="2023-04-02T13:04:00.000Z" title="Created 2023-04-02 21:04:00">2023-04-02</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-23T01:28:15.428Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161606259.jfif')"><nav id="nav"><span id="blog-info"><a href="/" title="小Q's Blog"><span class="site-name">小Q's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">小Q's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/feilong103" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:834235688@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202205252206339.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows下双系统卸载Linux"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux">Windows下双系统卸载Linux</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-05-25T14:04:32.000Z" title="发表于 2022-05-25 22:04:32">2022-05-25</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:40:23.245Z" title="更新于 2023-04-24 07:40:23">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%8F%8C%E7%B3%BB%E7%BB%9F/">双系统</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Linux/">Linux</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/">双系统</a></span></div><div class="content">双系统下删除Linux
+
+
+Windows下双系统卸载Linux大致思路
+
+挂载EFI文件
+利用BOOTICE更改UEFI启动顺序，删除无用启动项（如删除reFind和Linux引导项）
+利用磁盘分区和DiskGenius分区管理软件删除没用的硬盘和文件
+
+挂载EFI文件1.挂载EFI引导文件
+
+以管理员身份运行cmd
+
+
+执行命令：mountvol x: /s
+
+
+
+利用BOOTICE更改UEFI启动顺序，删除无用启动项（如删除reFind和Linux引导项）2.利用BOOTICE软件修改UEFI启动顺序，将Windows Boot Manager移动到第一位，并勾选下一次启动该项目，删除无关启动项，如Centos和reFind 最后保存当前启动项设置
+
+打开BOOTICE 找到UEFI项，选择修改启动序列
+
+
+
+左侧列表只保留Windows Boot Manager项
+
+
+勾选下一次启动该项目，并且保存当前启动项设置
+
+
+
+利用磁盘分区和DiskGenius分区管理软件删除没用的硬盘和文件3.DiskGenius分区管理软件删除EFI中没用文件夹，只留Boot和Microsoft文 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110291837282.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PS教学教程推荐"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐">PS教学教程推荐</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-29T10:58:59.000Z" title="发表于 2021-10-29 18:58:59">2021-10-29</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:38:47.448Z" title="更新于 2023-04-24 07:38:47">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/PS/">PS</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%95%AC%E4%BC%9F%E8%80%81%E5%B8%88/">敬伟老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/PS/">PS</a></span></div><div class="content">推荐平台
+哔哩哔哩
+
+
+b站上有很多免费的教学资源~ 不收费，无广告。能够视频弹幕，评论区留言，和网友老师互动。
+
+
+推荐视频
+B站敬伟老师
+b站教学视频链接：点击飞往✈
+（视频+素材）阿里云盘（不限速下载）点击飞往✈（想省流量的话这个将会是你最好的选择哦！）
+
+敬伟老师
+敬伟，设计师，设计教育研究者，动漫形象“豆包”的作者，著有《敬伟Photoshop教程》 [1] 数百集系列视频。1983年生于河北，艺术设计专业，2005年开始从事视觉创意、视频制作等工作，2012年制作《敬伟Photoshop教程》系列，获得网友广泛好评。2014年开设视觉设计师职业培训，将视觉教育与创意产业有机结合于互联网时代，打造高效创新的在线教育学习体验。
+
+
+推荐理由
+综述：敬伟老师设计师出身，精通PS，有过很丰富的教学经验，为人幽默，课程干货满满，是一位很优秀的老师。这款教程的播放量稳居b站第一！此教程内容很全，课程设计很有特点，分为基础篇、掌握篇、创意篇、练习篇。适用对象很广，可以根据自己的实际情况选择自己所需哦！课程时长分配很合理，可以利用闲暇时间进行学习，只要想学，课间休息也可以哦！最多时长30分 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110212124371.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win11提前上车微软WSA(Windows Subsystem for Android)教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程">Win11提前上车微软WSA(Windows Subsystem for Android)教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-21T15:09:14.000Z" title="发表于 2021-10-21 23:09:14">2021-10-21</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:39:59.029Z" title="更新于 2023-04-24 07:39:59">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WSA/">WSA</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/WSA/">WSA</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%AE%89%E5%8D%93%E5%8E%9F%E7%94%9F/">安卓原生</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/win11/">win11</a></span></div><div class="content">大纲：
+
+What is WSA？
+开启WSA的准备工作（跳过后面会报错！）
+开启WSA教程
+利用adb安装安卓应用
+
+
+
+效果图
+
+前言（What is WSA？）
+虽然微软某高管曾在 6 年前宣称“Windows 10 之后不再有下一代 Windows 操作系统”，但事实显然并非如此。当地时间 6 月 24 日，微软举办 Windows 11 发布会，这是微软继 2015 年推出 Windows 10 操作系统以来，发布的第一个新的 Windows 系统大版本，并且 Windows 11 可谓是赚足热度，其中最重要的更新之一便是“支持 Android 应用的运行”。
+官方名称为“Windows Subsystem for Android”，跟 Windows Subsystem for Linux（WSL）有异曲同工之妙，也基本上揭示了背后的实现原理。Windows 目前的 Windows Subsystem for Linux，可以说是基于 Hyper-V 功能的子集提供了“真正的 Linux 内核”。（Hyper-V 允许由第二客户操作系统绕过主机操作系统直接访问裸机硬件，因此 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110131605466.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++第一天学习笔记【持续更新】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】">C++第一天学习笔记【持续更新】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-13T08:04:00.000Z" title="发表于 2021-10-13 16:04:00">2021-10-13</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:36:25.595Z" title="更新于 2023-04-24 07:36:25">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C/">C++</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/C/">C++</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98/">黑马程序员</a></span></div><div class="content">C++基础入门1 C++初识1.1  第一个C++程序编写一个C++程序总共分为4个步骤
+
+创建项目
+创建文件
+编写代码
+运行程序
+
+1.1.1 创建项目​    Visual Studio是我们用来编写C++程序的主要工具，我们先将它打开
+
+
+1.1.2 创建文件右键源文件，选择添加 -&gt; 新建项
+
+给C++文件起个名称，然后点击添加即可。
+
+1.1.3 编写代码1234567891011#include&lt;iostream&gt;using namespace std;int main() &#123;	cout &lt;&lt; &quot;Hello world&quot; &lt;&lt; endl;	system(&quot;pause&quot;);	return 0;&#125;
+
+1.1.4 运行程序
+1.2 注释作用：在代码中加一些说明和解释，方便自己或其他程序员程序员阅读代码
+两种格式
+
+单行注释：// 描述信息 
+通常放在一行代码的上方，或者一条语句的末尾，对该行代码说明
+
+
+多行注释： /* 描述信息 */
+通常放在一段代码的上方，对该段代码做整体说 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110081812085.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言算法流程图、NS图【张亚男老师】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】">c语言算法流程图、NS图【张亚男老师】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-08T17:34:58.000Z" title="发表于 2021-10-09 01:34:58">2021-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:36:57.725Z" title="更新于 2023-04-24 07:36:57">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BC%A0%E4%BA%9A%E7%94%B7/">张亚男</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/c%E8%AF%AD%E8%A8%80/">c语言</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">大纲：
+
+交换两个变量
+输出10个数中的最大数
+有3个数a, b, c， 要求按有大小顺序把他们输出
+求1+2+3+……+100
+判断一个数n能否同时被3和5整除
+求两个数m和n的最大公约数
+求一元二次方程式ax^2+bx+c=0的根，分别考虑有两个不相等的实根和有两个相等的实根两种情况
+
+
+
+前言温馨提示：部分运算符号和书上会有出入，可能是因为学的算法版本不一致的原因…
+注意：仅供参考，和标准答案多少会有点出入，而且算法的答案本身就不唯一！！！
+注意：仅供参考，和标准答案多少会有点出入，而且算法的答案本身就不唯一！！！
+注意：仅供参考，和标准答案多少会有点出入，而且算法的答案本身就不唯一！！！
+由于只是我一个人的力量，当时我学c语言的时候，算法这一章就是一带而过的emmmmm，纯属是自己看的课本，现学的，还要就是第一次学画NS图，八张图下来，已经熟练啦，你会发现后面画的图还是可以看的过去的哈哈哈哈
+如果出现错误纯属正常哈~ 如果有什么不明白的地方，可以联系我，关于页面有我的联系方式哈或者可以在评论区留言也行哦（回复较慢）！
+电脑画图软件
+流程图：draw.io
+NS流程图：亿图图示
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/27/%E5%85%B3%E4%BA%8Ecmder%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E5%92%8Cdev-c-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="关于cmder在本地无法使用和Dev-C++基本使用说明"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109271629852.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于cmder在本地无法使用和Dev-C++基本使用说明"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/27/%E5%85%B3%E4%BA%8Ecmder%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E5%92%8Cdev-c-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="关于cmder在本地无法使用和Dev-C++基本使用说明">关于cmder在本地无法使用和Dev-C++基本使用说明</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-27T08:26:35.000Z" title="发表于 2021-09-27 16:26:35">2021-09-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:41:14.181Z" title="更新于 2023-04-24 07:41:14">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C%E8%AF%AD%E8%A8%80/">C语言</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/dev-c/">dev-c++</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/cmder/">cmder</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/C%E8%AF%AD%E8%A8%80/">C语言</a></span></div><div class="content">前言：
+首先简单了解一下基本概念：
+想要用c语言完成一个程序，最基本需要两个东西，一个叫编辑器，另一个叫编译器。编辑器用来写代码，编译器用来把源代码变成可执行文件，简单理解成软件即可。
+编辑器：咱们常用的记事本，vim等都可以。
+编译器：很常见的编译器如gcc 它集成在mingw32/mingw64中。
+还有一个概念叫ide，ide中文集成开发环境。字面意思，它同时包含了编辑器和编译器。
+常见的c语言ide如Dev-C++ 本期带来的就是Dev-C++
+
+关于Cmder及为什么本地无法使用编译
+首先说明一下为什么刘老师会选择Cmder这款软件：
+因为老师想让咱们了解Linux操作系统，这个我真的很感激他，我在群里说的话绝不是迎合！是本意！ 而学校服务器用的就是Linux系统，包括将来咱们进了公司 也很可能会要求使用Linux系统！
+老师要求将作业提交到学校服务器，这就需要咱们能够连接到学校服务器，怎么实现呢，这就得简单提一下ssh了~   通过ssh咱们就可以连接到学校服务器。
+cmder恰好就集成了ssh这个功能~  当然不只是cmder 比如putty也带~ 为什么选cmder而不 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/16/%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%8E%A8%E8%8D%90%E6%B8%85%E5%8D%95%E5%8F%8A%E5%88%86%E6%9E%90/" title="笔记本推荐清单及分析"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/fatsheeps/mypicgo@master/202108161606482.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="笔记本推荐清单及分析"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/16/%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%8E%A8%E8%8D%90%E6%B8%85%E5%8D%95%E5%8F%8A%E5%88%86%E6%9E%90/" title="笔记本推荐清单及分析">笔记本推荐清单及分析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-15T22:51:47.000Z" title="发表于 2021-09-16 06:51:47">2021-09-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T00:55:48.879Z" title="更新于 2023-04-23 08:55:48">2023-04-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%BB%E8%96%84%E6%9C%AC/">轻薄本</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%81%94%E6%83%B3/">联想</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E8%BD%BB%E8%96%84%E6%9C%AC/">轻薄本</a></span></div><div class="content">前言我写的这些清单主要考虑到以下内容：
+
+不玩游戏，学习用，但有时候需要用到PS Pr等软件
+不要游戏本，太笨重了，女生拿挺麻烦的 （游戏本不电源性能很鸡肋，游戏本的电源也挺重的）
+价格1万以内，可以不用优先考虑性价比
+屏幕尽量14英寸左右  太大了不方便 太小了也不好~
+能完美胜任大学四年，并且配置尽量不过剩
+
+Premiere Pro（Pr） 硬件要求先来跟我一起看一下Pr官方给的配置文档吧，你要知道，这可是官方给的推荐配置哦！
+Adobe官方推荐Pr配置地址，[点击前往✈](Adobe Premiere Pro 系统要求)
+
+
+PR是Adobe公司出品的一款剪辑软件，这款软件对于CPU（处理器）、内存、显卡的要求很高。我们分别来看这三项数据：
+
+处理器
+处理器，也就是CPU啦~  一般分为AMD和英特尔Inter两大厂家~  近年AMD崛起啦~ 网上不少说AMD YES AMD yyds滴~ 因为性价比较高~ 而Inter一直都是大佬级别的存在~ 但性价比相比不如AMD 所以一般性价比比较高的机子 上的都是AMD的处理器啦~
+
+Intel® 第 7 代或更新版本的 CPU，或 A ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/15/Emmet%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87web%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%EF%BC%81%E3%80%90web%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD%E3%80%91/" title="Emmet语法快速提升web开发效率！【web必备技能】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109152227216.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Emmet语法快速提升web开发效率！【web必备技能】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/15/Emmet%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E6%8F%90%E5%8D%87web%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87%EF%BC%81%E3%80%90web%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD%E3%80%91/" title="Emmet语法快速提升web开发效率！【web必备技能】">Emmet语法快速提升web开发效率！【web必备技能】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-15T14:19:20.000Z" title="发表于 2021-09-15 22:19:20">2021-09-15</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:37:05.536Z" title="更新于 2023-04-24 07:37:05">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Emmet%E8%AF%AD%E6%B3%95/">Emmet语法</a></span></div><div class="content">Emmet语法大纲：
+
+快速生成HTML结构语法
+快速生成CSS样式语法
+快速格式化代码
+
+
+
+1.快速生成HTML结构语法
+生成标签 直接输入标签名 按tab键即可 比如 div 然后tab 键， 就可以生成 &lt;div&gt;&lt;/div&gt;
+如果想要生成多个相同标签 加上 * 就可以了 比如 div*3 就可以快速生成3个div
+如果有父子级关系的标签，可以用 &gt; 比如 ul &gt; li就可以了
+如果有兄弟关系的标签，用 + 就可以了 比如 div+p
+如果生成带有类名或者id名字的， 直接写 .demo 或者 #two tab 键就可以了
+如果生成的div 类名是有顺序的， 可以用自增符号$
+如果想要在生成的标签内部写内容可以用 { } 表示
+
+123456789101112131415161718192021222324252627282930313233343536373839404142&lt;!-- 生成标签 直接输入标签名 按tab键即可 比如 div 然后tab 键， 就可以生成 &lt;div&gt;&lt;/div&gt; --&gt;&l ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/14/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="移动web开发学习第二天笔记【持续更新】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109142009933.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="移动web开发学习第二天笔记【持续更新】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/14/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E5%A4%A9%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="移动web开发学习第二天笔记【持续更新】">移动web开发学习第二天笔记【持续更新】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-14T12:37:53.000Z" title="发表于 2021-09-14 20:37:53">2021-09-14</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:42:17.019Z" title="更新于 2023-04-24 07:42:17">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/html/">html</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/css/">css</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E7%A7%BB%E5%8A%A8web/">移动web</a></span></div><div class="content"> 第二天学习大纲：
+
+flex 布局体验
+flex 布局原理
+flex 布局父项常见属性
+flex 布局子项常见属性
+携程网首页案例制作
+
+1.flex布局体验1.1传统布局与flex布局传统布局
+
+兼容性好
+布局繁琐
+局限性，不能再移动端很好的布局
+
+flex 弹性布局
+
+操作方便，布局极为简单，移动端应用很广泛
+PC 端浏览器支持情况较差
+IE 11 或更低版本，不支持或仅部分支持
+
+建议：
+
+如果是PC端页面布局，我们还是传统布局。
+如果是移动端或者不考虑兼容性问题的PC端页面布局，我们还是使用flex弹性布局
+
+1.2初体验1.搭建HTML结构
+1234567&lt;div&gt;	&lt;span&gt;1&lt;/span&gt;	&lt;span&gt;2&lt;/span&gt;	&lt;span&gt;3&lt;/span&gt;&lt;/div&gt;
+
+
+里面的3个span是行内元素
+
+2.CSS样式
+①  span 直接给宽度和高度，背景颜色，还有蓝色边框
+②  给 div 只需要添加 “display: flex” 即可
+效果图：
+
+2.flex布局原理2.1 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/09/14/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="移动web开发学习第一天笔记【持续更新】"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202109142009933.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="移动web开发学习第一天笔记【持续更新】"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/09/14/%E7%A7%BB%E5%8A%A8web%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E5%A4%A9%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="移动web开发学习第一天笔记【持续更新】">移动web开发学习第一天笔记【持续更新】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-09-14T10:45:27.000Z" title="发表于 2021-09-14 18:45:27">2021-09-14</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:42:22.908Z" title="更新于 2023-04-24 07:42:22">2023-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/html/">html</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/pink%E8%80%81%E5%B8%88/">pink老师</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/css/">css</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E7%A7%BB%E5%8A%A8web/">移动web</a></span></div><div class="content">第一天学习大纲：
+
+移动端基础
+视口
+二倍图
+移动端调试
+移动端技术解决方案
+移动端常见布局
+移动端开发之流式布局
+
+
+
+1. 移动端基础1.1浏览器现状
+国内的UC和QQ，百度等手机浏览器都是根据Webkit修改过来的内核，国内尚无自主研发的内核，就像国内的手机操作系统都是基于Android修改开发的一样。
+总结：兼容移动端主流浏览器，处理Webkit内核浏览器即可。
+1.2 手机屏幕的现状
+移动端设备屏幕尺寸非常多，碎片化严重。
+Android设备有多种分辨率：480x800, 480x854, 540x960, 720x1280，1080x1920等，还有传说中的2K，4k屏。
+近年来iPhone的碎片化也加剧了，其设备的主要分辨率有：640x960, 640x1136, 750x1334, 1242x2208等。
+作为开发者无需关注这些分辨率，因为我们常用的尺寸单位是 px 。
+
+
+1.3常见移动端屏幕尺寸
+
+
+设备
+尺寸（英寸）
+开发尺寸（px）
+物理像素比（dpr）
+
+
+
+iPhone3G
+3.5
+320*480
+1.0
+
+
+iPhone4/4s
+3.5
+320*480
+2 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小Q</div><div class="author-info__description">我的个人博客，记录学习笔记和我的成长过程。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/feilong103"><i></i><span>🛴前往小家...</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/feilong103" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:834235688@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202205252206339.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows下双系统卸载Linux"/></a><div class="content"><a class="title" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux">Windows下双系统卸载Linux</a><time datetime="2022-05-25T14:04:32.000Z" title="发表于 2022-05-25 22:04:32">2022-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110291837282.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PS教学教程推荐"/></a><div class="content"><a class="title" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐">PS教学教程推荐</a><time datetime="2021-10-29T10:58:59.000Z" title="发表于 2021-10-29 18:58:59">2021-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110212124371.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win11提前上车微软WSA(Windows Subsystem for Android)教程"/></a><div class="content"><a class="title" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程">Win11提前上车微软WSA(Windows Subsystem for Android)教程</a><time datetime="2021-10-21T15:09:14.000Z" title="发表于 2021-10-21 23:09:14">2021-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110131605466.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++第一天学习笔记【持续更新】"/></a><div class="content"><a class="title" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】">C++第一天学习笔记【持续更新】</a><time datetime="2021-10-13T08:04:00.000Z" title="发表于 2021-10-13 16:04:00">2021-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110081812085.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言算法流程图、NS图【张亚男老师】"/></a><div class="content"><a class="title" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】">c语言算法流程图、NS图【张亚男老师】</a><time datetime="2021-10-08T17:34:58.000Z" title="发表于 2021-10-09 01:34:58">2021-10-09</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Adobe/"><span class="card-category-list-name">Adobe</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/"><span class="card-category-list-name">C++</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C%E8%AF%AD%E8%A8%80/"><span class="card-category-list-name">C语言</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/IIS/"><span class="card-category-list-name">IIS</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Markdown/"><span class="card-category-list-name">Markdown</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/PS/"><span class="card-category-list-name">PS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/WSA/"><span class="card-category-list-name">WSA</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/HTML5/" style="font-size: 1.1em; color: #999">HTML5</a> <a href="/tags/Emmet%E8%AF%AD%E6%B3%95/" style="font-size: 1.1em; color: #999">Emmet语法</a> <a href="/tags/AliDrive/" style="font-size: 1.17em; color: #999c9f">AliDrive</a> <a href="/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">双系统</a> <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" style="font-size: 1.1em; color: #999">内网穿透</a> <a href="/tags/%E5%BC%A0%E4%BA%9A%E7%94%B7/" style="font-size: 1.1em; color: #999">张亚男</a> <a href="/tags/%E8%BD%BB%E8%96%84%E6%9C%AC/" style="font-size: 1.1em; color: #999">轻薄本</a> <a href="/tags/hexo%E7%BE%8E%E5%8C%96/" style="font-size: 1.3em; color: #99a1ac">hexo美化</a> <a href="/tags/pink%E8%80%81%E5%B8%88/" style="font-size: 1.43em; color: #99a6b9">pink老师</a> <a href="/tags/%E6%B2%B9%E7%8C%B4%E8%84%9A%E6%9C%AC/" style="font-size: 1.1em; color: #999">油猴脚本</a> <a href="/tags/Rainbow/" style="font-size: 1.1em; color: #999">Rainbow</a> <a href="/tags/Ubuntu/" style="font-size: 1.1em; color: #999">Ubuntu</a> <a href="/tags/%E7%BD%91%E7%9B%98/" style="font-size: 1.3em; color: #99a1ac">网盘</a> <a href="/tags/bios/" style="font-size: 1.1em; color: #999">bios</a> <a href="/tags/Adobe/" style="font-size: 1.1em; color: #999">Adobe</a> <a href="/tags/html/" style="font-size: 1.37em; color: #99a4b2">html</a> <a href="/tags/%E7%94%B5%E8%84%91%E6%8A%80%E5%B7%A7/" style="font-size: 1.17em; color: #999c9f">电脑技巧</a> <a href="/tags/win11/" style="font-size: 1.1em; color: #999">win11</a> <a href="/tags/%E8%81%94%E6%83%B3/" style="font-size: 1.1em; color: #999">联想</a> <a href="/tags/%E7%A7%BB%E5%8A%A8web/" style="font-size: 1.17em; color: #999c9f">移动web</a> <a href="/tags/%E5%AE%89%E5%8D%93%E5%8E%9F%E7%94%9F/" style="font-size: 1.1em; color: #999">安卓原生</a> <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 1.1em; color: #999">C语言</a> <a href="/tags/OneManager/" style="font-size: 1.23em; color: #999ea6">OneManager</a> <a href="/tags/%E6%95%AC%E4%BC%9F%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">敬伟老师</a> <a href="/tags/Vposy/" style="font-size: 1.1em; color: #999">Vposy</a> <a href="/tags/vercel/" style="font-size: 1.1em; color: #999">vercel</a> <a href="/tags/Markdown/" style="font-size: 1.1em; color: #999">Markdown</a> <a href="/tags/%E6%9C%AC%E5%9C%B0%E7%BD%91%E7%AB%99/" style="font-size: 1.1em; color: #999">本地网站</a> <a href="/tags/c%E8%AF%AD%E8%A8%80/" style="font-size: 1.1em; color: #999">c语言</a> <a href="/tags/b%E7%AB%99pink%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">b站pink老师</a> <a href="/tags/office-E5/" style="font-size: 1.1em; color: #999">office E5</a> <a href="/tags/PS/" style="font-size: 1.1em; color: #999">PS</a> <a href="/tags/OneDrive/" style="font-size: 1.3em; color: #99a1ac">OneDrive</a> <a href="/tags/tampermonkey/" style="font-size: 1.1em; color: #999">tampermonkey</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.5em; color: #99a9bf">前端</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">算法</a> <a href="/tags/Fluid%E4%B8%BB%E9%A2%98/" style="font-size: 1.23em; color: #999ea6">Fluid主题</a> <a href="/tags/dev-c/" style="font-size: 1.1em; color: #999">dev-c++</a> <a href="/tags/FC%E9%98%BF%E9%87%8C%E4%BA%91%E5%87%BD%E6%95%B0%E8%AE%A1%E7%AE%97/" style="font-size: 1.1em; color: #999">FC阿里云函数计算</a> <a href="/tags/WSL/" style="font-size: 1.1em; color: #999">WSL</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">15</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/08/"><span class="card-archive-list-date">八月 2021</span><span class="card-archive-list-count">23</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">43</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2021-08-10T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">99k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-24T00:13:13.680Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 小Q</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = []
+        sub.unshift(data.hitokoto, from)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').innerHTML = data.hitokoto
+      }
+    })
+}
+typedJSFn.run(subtitleType)
+</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>

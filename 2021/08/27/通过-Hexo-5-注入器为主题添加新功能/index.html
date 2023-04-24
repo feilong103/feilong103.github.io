@@ -1,0 +1,360 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>通过 Hexo 5 注入器为主题添加新功能 | 小Q's Blog</title><meta name="author" content="小Q"><meta name="copyright" content="小Q"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hexo 注入器Hexo 注入器是 Hexo 5 版本加入的一项新功能，注入器可以将静态代码片段注入生成的 HTML 的 &lt;head&gt; 和 &lt;body&gt; 中。 编写注入代码，需要在博客的根目录下创建 scripts 文件夹，然后在里面任意命名创建一个 js 文件即可。 例如创建一个 &#x2F;blog&#x2F;scripts&#x2F;example.js，内容为： 1hexo.extend.inj">
+<meta property="og:type" content="article">
+<meta property="og:title" content="通过 Hexo 5 注入器为主题添加新功能">
+<meta property="og:url" content="http://feilong103.vercel.app/2021/08/27/%E9%80%9A%E8%BF%87-Hexo-5-%E6%B3%A8%E5%85%A5%E5%99%A8%E4%B8%BA%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%B0%E5%8A%9F%E8%83%BD/index.html">
+<meta property="og:site_name" content="小Q&#39;s Blog">
+<meta property="og:description" content="Hexo 注入器Hexo 注入器是 Hexo 5 版本加入的一项新功能，注入器可以将静态代码片段注入生成的 HTML 的 &lt;head&gt; 和 &lt;body&gt; 中。 编写注入代码，需要在博客的根目录下创建 scripts 文件夹，然后在里面任意命名创建一个 js 文件即可。 例如创建一个 &#x2F;blog&#x2F;scripts&#x2F;example.js，内容为： 1hexo.extend.inj">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108271955304.jpg">
+<meta property="article:published_time" content="2021-08-27T11:03:02.000Z">
+<meta property="article:modified_time" content="2023-04-23T23:42:06.589Z">
+<meta property="article:author" content="小Q">
+<meta property="article:tag" content="hexo美化">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108271955304.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108200338178.png"><link rel="canonical" href="http://feilong103.vercel.app/2021/08/27/%E9%80%9A%E8%BF%87-Hexo-5-%E6%B3%A8%E5%85%A5%E5%99%A8%E4%B8%BA%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%B0%E5%8A%9F%E8%83%BD/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '通过 Hexo 5 注入器为主题添加新功能',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-24 07:42:06'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108271955304.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="小Q's Blog"><span class="site-name">小Q's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">通过 Hexo 5 注入器为主题添加新功能</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-27T11:03:02.000Z" title="发表于 2021-08-27 19:03:02">2021-08-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-23T23:42:06.589Z" title="更新于 2023-04-24 07:42:06">2023-04-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/hexo%E7%BE%8E%E5%8C%96/">hexo美化</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="通过 Hexo 5 注入器为主题添加新功能"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Hexo-注入器"><a href="#Hexo-注入器" class="headerlink" title="Hexo 注入器"></a>Hexo 注入器</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/api/injector.html">Hexo 注入器</a>是 Hexo 5 版本加入的一项新功能，注入器可以将静态代码片段注入生成的 HTML 的 <code>&lt;head&gt;</code> 和 <code>&lt;body&gt;</code> 中。</p>
+<p>编写注入代码，需要在博客的根目录下创建 <code>scripts</code> 文件夹，然后在里面任意命名创建一个 js 文件即可。</p>
+<p>例如创建一个 <code>/blog/scripts/example.js</code>，内容为：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">injector</span>.<span class="title function_">register</span>(<span class="string">&#x27;body_end&#x27;</span>, <span class="string">&#x27;&lt;script src=&quot;/jquery.js&quot;&gt;&lt;/script&gt;&#x27;</span>, <span class="string">&#x27;default&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>上述代码会在生成的页面 <code>&lt;/body&gt;</code> 注入加载 <code>jquery.js</code> 的代码。</p>
+<p><code>register</code> 函数可接受三个参数，第一个参数是代码片段注入的位置，接受以下值：</p>
+<ul>
+<li><code>head_begin</code>: 注入在 <code>&lt;head&gt;</code> 之后（默认）</li>
+<li><code>head_end</code>: 注入在 <code>&lt;/head&gt;</code> 之前</li>
+<li><code>body_begin</code>: 注入在 <code>&lt;body&gt;</code> 之后</li>
+<li><code>body_end</code>: 注入在 <code>&lt;/body&gt;</code> 之前</li>
+</ul>
+<p>第二个参数是注入的片段，可以是字符串，也可以是一个返回值为字符串的函数。</p>
+<p>第三个参数是注入的页面类型，接受以下值：</p>
+<ul>
+<li><code>default</code>: 注入到每个页面（默认值）</li>
+<li><code>home</code>: 只注入到主页（<code>is_home()</code> 为 <code>true</code> 的页面）</li>
+<li><code>post</code>: 只注入到文章页面（<code>is_post()</code> 为 <code>true</code> 的页面）</li>
+<li><code>page</code>: 只注入到独立页面（<code>is_page()</code> 为 <code>true</code> 的页面）</li>
+<li><code>archive</code>: 只注入到归档页面（<code>is_archive()</code> 为 <code>true</code> 的页面）</li>
+<li><code>category</code>: 只注入到分类页面（<code>is_category()</code> 为 <code>true</code> 的页面）</li>
+<li><code>tag</code>: 只注入到标签页面（<code>is_tag()</code> 为 <code>true</code> 的页面）</li>
+<li>或是其他自定义 layout 名称</li>
+</ul>
+<h2 id="实际案例"><a href="#实际案例" class="headerlink" title="实际案例"></a>实际案例</h2><p>在实际使用中，建议将 js 代码独立成为 js 文件，存放在博客的 <code>source</code> 目录下，然后在 <code>scripts</code> 里通过一个包含 injector 的 js 文件统一引入。</p>
+<p>例如创建一个 <code>/source/js/custom.js</code>，里面包含初始化的代码，然后在 <code>/scripts/injector.js</code> 里写入：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">injector</span>.<span class="title function_">register</span>(<span class="string">&#x27;body_end&#x27;</span>, <span class="string">`</span></span><br><span class="line"><span class="string">  &lt;script src=&quot;/js/custom.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">`</span>)</span><br></pre></td></tr></table></figure>
+
+<p>以下案例都采用类似的形式，不再赘述。</p>
+<h3 id="APlayer-音乐播放器"><a href="#APlayer-音乐播放器" class="headerlink" title="APlayer 音乐播放器"></a>APlayer 音乐播放器</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">injector</span>.<span class="title function_">register</span>(<span class="string">&#x27;body_end&#x27;</span>, <span class="string">`</span></span><br><span class="line"><span class="string">  &lt;div id=&quot;aplayer&quot;&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="string">  &lt;link defer rel=&quot;stylesheet&quot; href=&quot;https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css&quot; /&gt;</span></span><br><span class="line"><span class="string">  &lt;script src=&quot;https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">  &lt;script defer src=&quot;/js/aplayer.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">`</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">!(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> oldLoadAp = <span class="variable language_">window</span>.<span class="property">onload</span>;</span><br><span class="line">  <span class="variable language_">window</span>.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    oldLoadAp &amp;&amp; <span class="title function_">oldLoadAp</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">APlayer</span>(&#123;</span><br><span class="line">      <span class="attr">container</span>: <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;aplayer&#x27;</span>),</span><br><span class="line">      <span class="attr">fixed</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">autoplay</span>: <span class="literal">false</span>,</span><br><span class="line">      <span class="attr">loop</span>: <span class="string">&#x27;all&#x27;</span>,</span><br><span class="line">      <span class="attr">order</span>: <span class="string">&#x27;random&#x27;</span>,</span><br><span class="line">      <span class="attr">theme</span>: <span class="string">&#x27;#b7daff&#x27;</span>,</span><br><span class="line">      <span class="attr">preload</span>: <span class="string">&#x27;none&#x27;</span>,</span><br><span class="line">      <span class="attr">audio</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">name</span>: <span class="string">&#x27;song1&#x27;</span>,</span><br><span class="line">          <span class="attr">artist</span>: <span class="string">&#x27;artist1&#x27;</span>,</span><br><span class="line">          <span class="attr">url</span>: <span class="string">&#x27;/songs/song1.mp3&#x27;</span>,</span><br><span class="line">          <span class="attr">cover</span>: <span class="string">&#x27;/img/cover.jpg&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>container</td>
+<td>document.querySelector(‘.aplayer’)</td>
+<td>播放器容器元素</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>false</td>
+<td>开启吸底模式, <a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=fixed-mode">详情</a></td>
+</tr>
+<tr>
+<td>mini</td>
+<td>false</td>
+<td>开启迷你模式, <a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=mini-mode">详情</a></td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>false</td>
+<td>音频自动播放</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>‘#b7daff’</td>
+<td>主题色</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>‘all’</td>
+<td>音频循环播放, 可选值: ‘all’, ‘one’, ‘none’</td>
+</tr>
+<tr>
+<td>order</td>
+<td>‘list’</td>
+<td>音频循环顺序, 可选值: ‘list’, ‘random’</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>‘auto’</td>
+<td>预加载，可选值: ‘none’, ‘metadata’, ‘auto’</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>0.7</td>
+<td>默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</td>
+</tr>
+<tr>
+<td>audio</td>
+<td>-</td>
+<td>音频信息, 应该是一个对象或对象数组</td>
+</tr>
+<tr>
+<td>audio.name</td>
+<td>-</td>
+<td>音频名称</td>
+</tr>
+<tr>
+<td>audio.artist</td>
+<td>-</td>
+<td>音频艺术家</td>
+</tr>
+<tr>
+<td>audio.url</td>
+<td>-</td>
+<td>音频链接</td>
+</tr>
+<tr>
+<td>audio.cover</td>
+<td>-</td>
+<td>音频封面</td>
+</tr>
+<tr>
+<td>audio.lrc</td>
+<td>-</td>
+<td><a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=lrc">详情</a></td>
+</tr>
+<tr>
+<td>audio.theme</td>
+<td>-</td>
+<td>切换到此音频时的主题色，比上面的 theme 优先级高</td>
+</tr>
+<tr>
+<td>audio.type</td>
+<td>‘auto’</td>
+<td>可选值: ‘auto’, ‘hls’, ‘normal’ 或其他自定义类型, <a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=mse-support">详情</a></td>
+</tr>
+<tr>
+<td>customAudioType</td>
+<td>-</td>
+<td>自定义类型，<a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=mse-support">详情</a></td>
+</tr>
+<tr>
+<td>mutex</td>
+<td>true</td>
+<td>互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器</td>
+</tr>
+<tr>
+<td>lrcType</td>
+<td>0</td>
+<td><a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=lrc">详情</a></td>
+</tr>
+<tr>
+<td>listFolded</td>
+<td>false</td>
+<td>列表默认折叠</td>
+</tr>
+<tr>
+<td>listMaxHeight</td>
+<td>-</td>
+<td>列表最大高度</td>
+</tr>
+<tr>
+<td>storageName</td>
+<td>‘aplayer-setting’</td>
+<td>存储播放器设置的 localStorage key</td>
+</tr>
+</tbody></table>
+<p>更多关于Aplayer详见 <a target="_blank" rel="noopener" href="https://aplayer.js.org/#/zh-Hans/?id=%E5%8F%82%E6%95%B0">Aplayer 文档</a>。</p>
+<h3 id="DaoVoice-聊天插件"><a href="#DaoVoice-聊天插件" class="headerlink" title="DaoVoice 聊天插件"></a>DaoVoice 聊天插件</h3><p>先在 <a target="_blank" rel="noopener" href="https://daovoice.io/">https://daovoice.io</a> 注册一个账号，按其中的引导获得 appId，然后添加如下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo.<span class="property">extend</span>.<span class="property">injector</span>.<span class="title function_">register</span>(<span class="string">&#x27;body_end&#x27;</span>, <span class="string">`</span></span><br><span class="line"><span class="string">  &lt;script defer src=&quot;/js/daovoice.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="string">`</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">!(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> appId = <span class="string">&#x27;这里填上注册后账号的 appId&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  (<span class="keyword">function</span> (<span class="params">i, s, o, g, r, a, m</span>) &#123;  </span><br><span class="line">    i[<span class="string">&#x27;DaoVoiceObject&#x27;</span>] = r;</span><br><span class="line">    i[r] = i[r] ||</span><br><span class="line">      <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        (i[r].<span class="property">q</span> = i[r].<span class="property">q</span> || []).<span class="title function_">push</span>(<span class="variable language_">arguments</span>);</span><br><span class="line">      &#125;;</span><br><span class="line">    i[r].<span class="property">l</span> = <span class="number">1</span> * <span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line">    a = s.<span class="title function_">createElement</span>(o);</span><br><span class="line">    m = s.<span class="title function_">getElementsByTagName</span>(o)[<span class="number">0</span>];</span><br><span class="line">    a.<span class="property">async</span> = <span class="number">1</span>;</span><br><span class="line">    a.<span class="property">src</span> = g;</span><br><span class="line">    a.<span class="property">charset</span> = <span class="string">&#x27;utf-8&#x27;</span>;</span><br><span class="line">    m.<span class="property">parentNode</span>.<span class="title function_">insertBefore</span>(a, m);</span><br><span class="line">  &#125;)(<span class="variable language_">window</span>, <span class="variable language_">document</span>, <span class="string">&#x27;script&#x27;</span>, (<span class="string">&#x27;https:&#x27;</span> === <span class="variable language_">document</span>.<span class="property">location</span>.<span class="property">protocol</span> ? <span class="string">&#x27;https:&#x27;</span> : <span class="string">&#x27;http:&#x27;</span>) + <span class="string">&#x27;//widget.daovoice.io/widget/&#x27;</span> + appId + <span class="string">&#x27;.js&#x27;</span>, <span class="string">&#x27;daovoice&#x27;</span>);</span><br><span class="line">  <span class="title function_">daovoice</span>(<span class="string">&#x27;init&#x27;</span>, &#123;</span><br><span class="line">    <span class="attr">app_id</span>: appId,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="title function_">daovoice</span>(<span class="string">&#x27;update&#x27;</span>);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<h3 id="文章时效性提示"><a href="#文章时效性提示" class="headerlink" title="文章时效性提示"></a>文章时效性提示</h3><p>技术性文章往往存在时效性的问题，比如某些文章会介绍一些临时解决方案，但随着时间推移可能已经失效了。我们可以通过判断发布时间（即文章设置的 <code>date</code>）与当前时间的间隔，来为文章开头插入一条提示。</p>
+<p>代码效果如下所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108271955300.png" alt="文章时效性提示"></p>
+<p>文章时效性提示</p>
+<p>这是一篇发布于 263 天前的文章，部分信息可能已发生改变，请注意甄别。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> times = <span class="variable language_">document</span>.<span class="title function_">getElementsByTagName</span>(<span class="string">&#x27;time&#x27;</span>);</span><br><span class="line">  <span class="keyword">if</span> (times.<span class="property">length</span> === <span class="number">0</span>) &#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">  <span class="keyword">var</span> posts = <span class="variable language_">document</span>.<span class="title function_">getElementsByClassName</span>(<span class="string">&#x27;post-content&#x27;</span>);</span><br><span class="line">  <span class="keyword">if</span> (posts.<span class="property">length</span> === <span class="number">0</span>) &#123; <span class="keyword">return</span>; &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> pubTime = <span class="keyword">new</span> <span class="title class_">Date</span>(times[<span class="number">0</span>].<span class="property">dateTime</span>);  <span class="comment">/* 文章发布时间戳 */</span></span><br><span class="line">  <span class="keyword">var</span> now = <span class="title class_">Date</span>.<span class="title function_">now</span>()  <span class="comment">/* 当前时间戳 */</span></span><br><span class="line">  <span class="keyword">var</span> interval = <span class="built_in">parseInt</span>(now - pubTime)</span><br><span class="line">  <span class="comment">/* 发布时间超过指定时间（毫秒） */</span></span><br><span class="line">  <span class="keyword">if</span> (interval &gt; <span class="number">3600</span>*<span class="number">24</span>*<span class="number">30</span>*<span class="number">1000</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> days = <span class="built_in">parseInt</span>(interval / <span class="number">86400000</span>)</span><br><span class="line">    posts[<span class="number">0</span>].<span class="property">innerHTML</span> = <span class="string">&#x27;&lt;div class=&quot;note note-warning&quot; style=&quot;font-size:0.9rem&quot;&gt;&lt;p&gt;&#x27;</span> +</span><br><span class="line">      <span class="string">&#x27;&lt;div class=&quot;h6&quot;&gt;文章时效性提示&lt;/div&gt;&lt;p&gt;这是一篇发布于 &#x27;</span> + days + <span class="string">&#x27; 天前的文章，部分信息可能已发生改变，请注意甄别。&#x27;</span> +</span><br><span class="line">      <span class="string">&#x27;&lt;/p&gt;&lt;/p&gt;&lt;/div&gt;&#x27;</span> + posts[<span class="number">0</span>].<span class="property">innerHTML</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://feilong103.vercel.app">小Q</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://feilong103.vercel.app/2021/08/27/%E9%80%9A%E8%BF%87-Hexo-5-%E6%B3%A8%E5%85%A5%E5%99%A8%E4%B8%BA%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%B0%E5%8A%9F%E8%83%BD/">http://feilong103.vercel.app/2021/08/27/%E9%80%9A%E8%BF%87-Hexo-5-%E6%B3%A8%E5%85%A5%E5%99%A8%E4%B8%BA%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%B0%E5%8A%9F%E8%83%BD/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://feilong103.vercel.app" target="_blank">小Q's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo%E7%BE%8E%E5%8C%96/">hexo美化</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108271955304.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/08/27/Fluid-%E9%A1%B5%E8%84%9A%E5%A2%9E%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/" title="Fluid 页脚增加网站运行时长"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108272022889.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Fluid 页脚增加网站运行时长</div></div></a></div><div class="next-post pull-right"><a href="/2021/08/24/%E8%8E%B7%E5%8F%96%E5%BE%AE%E8%BD%AFOneDrive%E7%9A%84refresh-token%E3%80%81client-id%E3%80%81client-secret%E5%92%8Caccess-token/" title="获取微软OneDrive的refresh_token、client_id、client_secret和access_token"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/fatsheeps/mypicgo@master/202108161606482.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">获取微软OneDrive的refresh_token、client_id、client_secret和access_token</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/08/27/Fluid-%E9%A1%B5%E8%84%9A%E5%A2%9E%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%95%BF/" title="Fluid 页脚增加网站运行时长"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108272022889.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-27</div><div class="title">Fluid 页脚增加网站运行时长</div></div></a></div><div><a href="/2021/08/28/%E4%BD%BF%E7%94%A8-Rainbow-%E5%B1%95%E7%A4%BA%E9%9A%8F%E6%9C%BA%E7%9A%84%E8%8B%B1%E8%AF%AD%E5%8F%A5%E5%AD%90/" title="使用 Rainbow 展示随机的英语句子"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281548575.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-28</div><div class="title">使用 Rainbow 展示随机的英语句子</div></div></a></div><div><a href="/2021/08/27/%E5%9C%A8-Fluid-%E4%B8%BB%E9%A2%98%E9%A6%96%E9%A1%B5%E4%B8%8A%E5%8A%A0%E5%85%A5%E4%B8%80%E8%A8%80/" title="在 Fluid 主题首页上加入一言"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108272056351.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-27</div><div class="title">在 Fluid 主题首页上加入一言</div></div></a></div><div><a href="/2021/08/13/%E6%90%AD%E9%85%8D-Fluid-%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%99%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" title="搭配 Fluid 如何优雅的写一篇文章"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108281601171.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-13</div><div class="title">搭配 Fluid 如何优雅的写一篇文章</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202108161600693.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小Q</div><div class="author-info__description">我的个人博客，记录学习笔记和我的成长过程。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">43</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">57</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">17</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/feilong103"><i></i><span>🛴前往小家...</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/feilong103" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:834235688@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-%E6%B3%A8%E5%85%A5%E5%99%A8"><span class="toc-text">Hexo 注入器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%99%85%E6%A1%88%E4%BE%8B"><span class="toc-text">实际案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#APlayer-%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8"><span class="toc-text">APlayer 音乐播放器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E6%95%B0"><span class="toc-text">参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DaoVoice-%E8%81%8A%E5%A4%A9%E6%8F%92%E4%BB%B6"><span class="toc-text">DaoVoice 聊天插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA"><span class="toc-text">文章时效性提示</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202205252206339.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows下双系统卸载Linux"/></a><div class="content"><a class="title" href="/2022/05/25/Windows%E4%B8%8B%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%8D%B8%E8%BD%BDLinux/" title="Windows下双系统卸载Linux">Windows下双系统卸载Linux</a><time datetime="2022-05-25T14:04:32.000Z" title="发表于 2022-05-25 22:04:32">2022-05-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110291837282.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PS教学教程推荐"/></a><div class="content"><a class="title" href="/2021/10/29/PS%E6%95%99%E5%AD%A6%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90/" title="PS教学教程推荐">PS教学教程推荐</a><time datetime="2021-10-29T10:58:59.000Z" title="发表于 2021-10-29 18:58:59">2021-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110212124371.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Win11提前上车微软WSA(Windows Subsystem for Android)教程"/></a><div class="content"><a class="title" href="/2021/10/21/Win11%E6%8F%90%E5%89%8D%E4%B8%8A%E8%BD%A6%E5%BE%AE%E8%BD%AFWSA-Windows-Subsystem-for-Android-%E6%95%99%E7%A8%8B/" title="Win11提前上车微软WSA(Windows Subsystem for Android)教程">Win11提前上车微软WSA(Windows Subsystem for Android)教程</a><time datetime="2021-10-21T15:09:14.000Z" title="发表于 2021-10-21 23:09:14">2021-10-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110131605466.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++第一天学习笔记【持续更新】"/></a><div class="content"><a class="title" href="/2021/10/13/C-%E7%AC%AC%E4%B8%80%E5%A4%A9%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E3%80%91/" title="C++第一天学习笔记【持续更新】">C++第一天学习笔记【持续更新】</a><time datetime="2021-10-13T08:04:00.000Z" title="发表于 2021-10-13 16:04:00">2021-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/feilong103/mypicgo/202110081812085.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="c语言算法流程图、NS图【张亚男老师】"/></a><div class="content"><a class="title" href="/2021/10/09/c%E8%AF%AD%E8%A8%80%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B%E5%9B%BE-NS%E5%9B%BE%E3%80%90%E5%BC%A0%E4%BA%9A%E7%94%B7%E8%80%81%E5%B8%88%E3%80%91/" title="c语言算法流程图、NS图【张亚男老师】">c语言算法流程图、NS图【张亚男老师】</a><time datetime="2021-10-08T17:34:58.000Z" title="发表于 2021-10-09 01:34:58">2021-10-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By 小Q</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>
